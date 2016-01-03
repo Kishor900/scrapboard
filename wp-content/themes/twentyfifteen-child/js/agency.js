@@ -16,11 +16,23 @@ $(function() {
 });
 
 // Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
+$(document).ready(function() {
+    $(".navbar-fixed-top ul li").click(function() {
+        if (location.href !== "http://scrapboard.co.in/")
+        {
+            location.href = "http://scrapboard.co.in/";
+            return false;
+        }
+        $(".navbar-fixed-top ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+});
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
+});
+
+$(document).ready(function() {
+    $(".search-submit.screen-reader-text").attr("class", "btn btn-warning");
 });
