@@ -15,7 +15,7 @@
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
-get_header();
+get_header("header1");
 ?>
 <?php if (have_posts()) : ?>
 

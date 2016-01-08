@@ -2,7 +2,7 @@
 /*
  * Template Name: Home
  */
-get_header("header1");
+get_header();
 ?>
 <!-- Portfolio Grid Section -->
 <section id="portfolio" class="bg-light-gray">
@@ -10,7 +10,7 @@ get_header("header1");
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Search Results</h2>
+                <h2 class="section-heading">Posts</h2>
                 <h3 class="section-subheading text-muted"></h3>
             </div>
         </div>

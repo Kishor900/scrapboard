@@ -58,6 +58,7 @@ aside .btn-warning
 {
     border-radius: 0px;
     padding: 9px;
+    margin-bottom: 3px;
 
 }
 figcaption, figure{
@@ -115,4 +116,58 @@ figcaption, figure{
 }
 .tags a::before {
     border-color: transparent #0069af transparent transparent;
+}
+img.avatar{
+    border-radius: 58px;
+    margin-right: 13px;
+}
+#subscribe-button{
+    margin-top: -19px;
+    width: 273px;
+}
+#subscribe-input{
+    width: 273px;
+    border-radius: 0px;
+}
+
+#menu-header-menu{
+    margin: 0;
+    padding: 0;
+}
+#menu-header-menu  ul{
+
+}
+
+#menu-header-menu> li{
+    display: inline;
+    margin-left: 1.618em;
+}
+#menu-header-menu  li{
+    list-style: none;
+}
+#menu-header-menu  li a{
+    text-decoration: none;
+    font-size: 	1em;
+    font-family:	'Lato',Helvetica,Arial,sans-serif ;
+    letter-spacing:	1px;
+}
+#menu-header-menu li.parent::after{
+    content:'+';
+}
+
+#menu-header-menu  .sub-menu {
+   display: none;
+   position: absolute;
+   background-color: #fff;
+}
+
+#menu-header-menu  li:hover>.sub-menu{
+    display: inline;
+    width: auto;
+    height: auto;
+    border: solid 1px #BBBBBB;
+    z-index: +1;
+}
+.timeline-image .img-circle{
+    height: 158px;
 }

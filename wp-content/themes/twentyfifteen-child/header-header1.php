@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * The template for displaying the header
  *
  * Displays all of the head element and everything up until the "site-content" div.
@@ -43,7 +43,9 @@ wp_head();
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
+
     <body id="page-top" class="index">
+
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -60,8 +62,8 @@ wp_head();
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <?php wp_nav_menu(array('theme_location' => 'single-header-menu', 'items_wrap' => '<ul id="exchangable" class="nav navbar-nav navbar-right">                                           <li class="hidden">
-                                            %3$s</ul>', 'walker' => new DD_Wolker_Menu)); ?>
+                    <?php wp_nav_menu(array('theme_location' => 'header-menu', 'items_wrap' => '<ul id="exchangable" class="nav navbar-nav navbar-right">                                           <li class="hidden">
+                                            %3$s</ul>')); ?>
                     <!--                                      <ul class="nav navbar-nav navbar-right">
                                                             <li class="hidden">
                                                                 <a href="#page-top"></a>
@@ -87,3 +89,14 @@ wp_head();
             </div>
             <!-- /.container-fluid -->
         </nav>
+
+        <!-- Header -->
+        <header id="main-header" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/img/header-bg.jpg); background-repeat:none;background-attachment:scroll;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;text-align:center;color:#fff">
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-lead-in">Welcome To The ScrapBoard!</div>
+                    <div class="intro-heading">Crispy scraps for you !</div>
+                    <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
+                </div>
+            </div>
+        </header>

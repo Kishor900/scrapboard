@@ -2,7 +2,10 @@
 /*
  * Template Name: Home
  */
-get_header();
+/**
+ *
+ */
+get_header("header1");
 ?>
 <!-- Portfolio Grid Section -->
 <section id="portfolio" class="bg-light-gray">
@@ -124,7 +127,7 @@ get_header();
                 <div class="team-member">
                     <img style="width:60%;" src="<?php echo get_stylesheet_directory_uri() . "/img/team/1.jpg"; ?>" class="img-responsive img-circle" alt="">
                     <h4>Kishor Parida</h4>
-                    <p class="text-muted">Lead Developer</p>
+                    <p class="text-muted">Developer</p>
                     <ul class="list-inline social-buttons">
                         <li><a href="https://twitter.com/kishorparida1" target="new"><i class="fa fa-twitter"></i></a>
                         </li>
@@ -161,6 +164,36 @@ get_header();
                         <li><a href="https://www.facebook.com/nilanchal.nayak?fref=ts" target="new"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li><a href="https://www.instagram.com/neel_aa/" target="new"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img style="width:60%;" src="<?php echo get_stylesheet_directory_uri() . "/img/team/4.jpg"; ?>" class="img-responsive img-circle" alt="">
+                    <h4>Pracheta Padhee</h4>
+                    <p class="text-muted">Author</p>
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://twitter.com/pracheta_p" target="new"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/pracheta.padhee" target="new"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://plus.google.com/108958692765387727891" target="new"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img style="width:60%;" src="<?php echo get_stylesheet_directory_uri() . "/img/team/5.jpg"; ?>" class="img-responsive img-circle" alt="" />
+                    <h4>Sunil Kumar Mohapatra</h4>
+                    <p class="text-muted">Author</p>
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://twitter.com/" target="new"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com" target="new"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/" target="new"><i class="fa fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>

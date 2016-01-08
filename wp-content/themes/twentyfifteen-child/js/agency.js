@@ -18,11 +18,6 @@ $(function() {
 // Highlight the top nav as scrolling occurs
 $(document).ready(function() {
     $(".navbar-fixed-top ul li").click(function() {
-        if (location.href !== "http://scrapboard.co.in/")
-        {
-            location.href = "http://scrapboard.co.in/";
-            return false;
-        }
         $(".navbar-fixed-top ul li").removeClass("active");
         $(this).addClass("active");
     });
