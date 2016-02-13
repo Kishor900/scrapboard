@@ -29,5 +29,10 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(document).ready(function() {
+    $("fieldset input").attr("class", "form-control");
+    $("fieldset select").attr("class", "form-control");
+    $("fieldset textarea").attr("class", "form-control");
+    $("#usp-submit .exclude").attr("class", "btn btn-success");
+    $("fieldset label").attr("class", "paa");
     $(".search-submit.screen-reader-text").attr("class", "btn btn-warning");
 });

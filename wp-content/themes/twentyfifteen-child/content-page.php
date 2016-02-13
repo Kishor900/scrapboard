@@ -1,11 +1,3 @@
-<?php
-// Author bio.
-if (is_single() && get_the_author_meta('description'))
-{
-    $a_link = get_the_author_meta("user_url");
-    $bio = get_the_author_meta("description");
-}
-?>
 <div class="row user-pre-head">
     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
         <?php
@@ -15,7 +7,7 @@ if (is_single() && get_the_author_meta('description'))
 </div>
 <div class="row user-info">
     <div class="col-md-12">
-<!--<span class="text-muted"><span class="fa fa-user"></span> By <?php the_author(); ?></span>-->
+<!--                        <span class="text-muted"><span class="fa fa-user"></span> By <?php the_author(); ?></span>-->
         <span class="text-muted" style='position:relative;'>
             <span style="border-radius: 40px;" >
                 <?php echo get_avatar(get_the_author_ID()); ?>
@@ -48,18 +40,4 @@ if (is_single() && get_the_author_meta('description'))
         ));
         ?>
     </div><!-- .entry-content -->
-</div>
-<div class="row">
-    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-        <div class="tags">
-            <span>Tags : </span>
-            <?php
-            $tag_list = get_the_tag_list();
-            str_replace(",", '', $tag_list);
-            if ($tag_list) {
-                echo $tag_list;
-            }
-            ?>
-        </div>
-    </div>
 </div>

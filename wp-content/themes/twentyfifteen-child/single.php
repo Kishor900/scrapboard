@@ -6,8 +6,7 @@
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
-get_header();        
- 
+get_header();
 ?>    
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php
@@ -42,51 +41,51 @@ get_header();
         </div>
     </header><!-- .entry-header -->
     <div class="container">
-<!--        <div class="row" style="margin-top: 20px;">
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                 thenew 
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-7361476368955757"
-                     data-ad-slot="8772127622"
-                     data-ad-format="auto"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-        </div>-->
+        <!--        <div class="row" style="margin-top: 20px;">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                         thenew 
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-7361476368955757"
+                             data-ad-slot="8772127622"
+                             data-ad-format="auto"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>-->
         <div class="row">
             <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
-                 <?php
+                <?php
                 // Start the loop.
                 while (have_posts()) : the_post();
-    
-                /*
-                 * Include the post format-specific template for the content. If you want to
-                 * use this in a child theme, then include a file called called content-___.php
-                 * (where ___ is the post format) and that will be used instead.
-                 */
-                get_template_part('content', get_post_format());
-                ?>
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12">
-                        <?php if (get_next_post()) { ?>
-                            <a href='<?php echo get_next_post()->guid; ?>' class="btn btn-warning pull-right nav-buttons" aria-hidden="true">>> <?php echo get_next_post()->post_title; ?></a>
-                        <?php } if (get_previous_post()) { ?>   
-                            <a href='<?php echo get_previous_post()->guid; ?>' class="btn btn-warning pull-left nav-buttons" aria-hidden="true"><< <?php echo get_previous_post()->post_title; ?></a> 
-                        <?php } ?>
+
+                    /*
+                     * Include the post format-specific template for the content. If you want to
+                     * use this in a child theme, then include a file called called content-___.php
+                     * (where ___ is the post format) and that will be used instead.
+                     */
+                    get_template_part('content', get_post_format());
+                    ?>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <?php if (get_next_post()) { ?>
+                                <a href='<?php echo get_next_post()->guid; ?>' class="btn btn-warning pull-right nav-buttons" aria-hidden="true">>> <?php echo get_next_post()->post_title; ?></a>
+                            <?php } if (get_previous_post()) { ?>   
+                                <a href='<?php echo get_previous_post()->guid; ?>' class="btn btn-warning pull-left nav-buttons" aria-hidden="true"><< <?php echo get_previous_post()->post_title; ?></a> 
+                            <?php } ?>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
-                        <?php
-                        // If comments are open or we have at least one comment, load up the comment template.
-                        if (comments_open() || get_comments_number()) :
-                            comments_template();
-                        endif;
-                        ?>
-                        <?php
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+                            <?php
+                            // If comments are open or we have at least one comment, load up the comment template.
+                            if (comments_open() || get_comments_number()) :
+                                comments_template();
+                            endif;
+                            ?>
+                            <?php
                         // End the loop.
                         endwhile;
                         ?>

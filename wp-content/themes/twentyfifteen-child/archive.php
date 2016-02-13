@@ -15,8 +15,18 @@
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
-get_header("header1");
+get_header();
 ?>
+<!-- Header -->
+<header id="main-header" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/img/header-bg.jpg); background-repeat:none;background-attachment:scroll;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;text-align:center;color:#fff">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Welcome To The ScrapBoard!</div>
+            <div class="intro-heading">Crispy scraps for you !</div>
+            <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
+        </div>
+    </div>
+</header>
 <?php if (have_posts()) : ?>
 
     <section id="portfolio" class="bg-light-gray">

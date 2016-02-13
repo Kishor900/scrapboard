@@ -156,9 +156,9 @@ img.avatar{
 }
 
 #menu-header-menu  .sub-menu {
-   display: none;
-   position: absolute;
-   background-color: #fff;
+    display: none;
+    position: absolute;
+    background-color: #fff;
 }
 
 #menu-header-menu  li:hover>.sub-menu{
@@ -170,4 +170,57 @@ img.avatar{
 }
 .timeline-image .img-circle{
     height: 158px;
+}
+.second-strip {
+    background: #3C763D;
+    color: whitesmoke;
+    padding: 15px;
+    font-size: 25px;
+}
+.second-strip a:hover
+{
+    color: #f4a225 !important;
+}
+.paa
+{
+    font-size: 20px;
+    margin-top: 10px !important;
+    margin-bottom: 13px !important;
+    margin-left: 0px !important;
+}
+.stick
+{
+    position: absolute;
+    width: 14px;
+    height: 100%;
+    background: #F0AD4E;
+    border-top: 33px solid rgba(202, 22, 22, 0);
+    border-right: 35px solid #3C763D;
+}
+.portfolio-caption h4 {
+    overflow: hidden !important;
+    white-space: nowrap;
+}
+.blog-thumbnail {
+    background-size: cover !important;
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat !important;
+}
+.message {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(173, 255, 47, 0.3);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.annie .username{
+    color: blueviolet;
+}
+.david .username{
+    color: red;
+}
+.hidden-xs{
+    display: block !important;
 }

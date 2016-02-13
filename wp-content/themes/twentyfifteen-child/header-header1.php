@@ -21,7 +21,7 @@ wp_head();
         <meta name="description" content="">
         <meta name="author" content="">
         <meta property="fb:app_id" content="1442510186051692" />
-        <title>Agency - Start Bootstrap Theme</title>
+        <title>ScrapBoard</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="<?php echo get_stylesheet_directory_uri() . "/css/bootstrap.min.css"; ?>" rel="stylesheet">

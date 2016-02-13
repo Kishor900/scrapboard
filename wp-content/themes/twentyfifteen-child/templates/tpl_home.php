@@ -29,7 +29,8 @@ get_header("header1");
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'large')[0]; ?>" class="img-responsive" alt="">
+                        <div class="blog-thumbnail" style="background: url(<?php echo wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'large')[0]; ?>)">
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4><?php the_title(); ?></h4>
@@ -191,9 +192,9 @@ get_header("header1");
                     <ul class="list-inline social-buttons">
                         <li><a href="https://twitter.com/" target="new"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <li><a href="https://www.facebook.com" target="new"><i class="fa fa-facebook"></i></a>
+                        <li><a href="https://www.facebook.com/sunilkumar.mohapatra.7" target="new"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="https://www.instagram.com/" target="new"><i class="fa fa-instagram"></i></a>
+                        <li><a href="https://www.instagram.com/delusional_sumo/" target="new"><i class="fa fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
